@@ -1,4 +1,5 @@
 package cn.msjava.code;
+import java.util.Stack;
 
 /**
  * msJava
@@ -8,6 +9,45 @@ package cn.msjava.code;
  */
 public class GetMinInStack {
 
+    private Stack<Integer> stackData;
+    private Stack<Integer> stackMin;
+
+    public GetMinInStack(){
+        this.stackData=new Stack<Integer>();
+        this.stackMin=new Stack<Integer>();
+    }
+
+    public void push(int newNum){
+        // 1. 判断stackMin，是否为空，如果为空压入
+        if(this.stackMin.isEmpty()){
+            stackMin.push(newNum);
+            // 2. 判断newNum是否小于stackMin栈顶的元素，如果小于将newNum压入，否则压入stackData
+        }else if(newNum<this.getmin()){
+            this.stackMin.push(newNum);
+        }else {
+            this.stackData.push(newNum);
+        }
+    }
+
+
+    public int pop(){
+        if(this.stackData.isEmpty()){
+            throw new RuntimeException("你的栈为空！");
+        }
+        int value=this.stackData.pop();
+        if(value==this.getmin()){
+            this.stackMin.pop();
+        }
+        return value;
+    }
+
+    public int getmin(){
+        if(this.stackMin.isEmpty()){
+            throw new RuntimeException("你的栈为空！");
+        }else {
+            return this.stackMin.peek();
+        }
+    }
 
 
 
