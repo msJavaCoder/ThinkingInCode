@@ -1,9 +1,9 @@
-package cn.msjava.code;
+package cn.msjava.coding;
 
 /**
  * msJava
  *
- * @Title
+ * @Title 链表结构
  * @Description
  * @Date 2020-10-08
  */

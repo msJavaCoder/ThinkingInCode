@@ -1,4 +1,4 @@
-package cn.msjava.code;
+package cn.msjava.coding;
 
 import java.util.Stack;
 
