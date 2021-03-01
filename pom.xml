@@ -12,6 +12,7 @@
         <module>StackAndQueue</module>
         <module>LinkedProblems</module>
         <module>OfferProblems</module>
+        <module>DataStructure</module>
     </modules>
 
 
