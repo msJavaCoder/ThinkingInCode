@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LinkedProblems" />
+        <module name="StackAndQueue" />
         <module name="DataStructure" />
         <module name="OfferProblems" />
-        <module name="StackAndQueue" />
+        <module name="LinkedProblems" />
       </profile>
     </annotationProcessing>
   </component>
