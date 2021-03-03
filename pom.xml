@@ -13,6 +13,7 @@
         <module>LinkedProblems</module>
         <module>OfferProblems</module>
         <module>DataStructure</module>
+        <module>AlgorithmsProblems</module>
     </modules>
 
 
