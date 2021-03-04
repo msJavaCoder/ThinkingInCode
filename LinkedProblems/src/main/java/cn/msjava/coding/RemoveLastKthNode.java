@@ -4,7 +4,7 @@ package cn.msjava.coding;
  * msJava
  *
  * @Description  在单链表中删除倒数第k个节点
- * @Date 2021-02-28j
+ * @Date 2021-02-28
  */
 public class RemoveLastKthNode {
 

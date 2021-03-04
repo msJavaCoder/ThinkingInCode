@@ -14,6 +14,7 @@
         <module>OfferProblems</module>
         <module>DataStructure</module>
         <module>AlgorithmsProblems</module>
+        <module>DesignPattern</module>
     </modules>
 
 
