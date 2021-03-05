@@ -3,6 +3,7 @@ package cn.msjava.coding;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Stack;
 
 /**
  * @author msJava
@@ -10,8 +11,47 @@ import java.util.Queue;
  */
 public class Solution {
     public static void main(String[] args) {
-        System.out.println((1+1)%7);
+        String s="}";
+        System.out.println(isValid(s));
     }
+
+
+    public static String removeDuplicateLetters(String s) {
+
+        Stack<Character> stack = new Stack<Character>();
+
+
+
+
+        return s;
+    }
+
+
+    /**
+     * 20.有效括号
+     * @param s
+     * @return
+     */
+    public static boolean isValid(String s){
+
+        Stack<Character> stack = new Stack<Character>();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if(c=='('){
+                stack.push(')');
+            }else if(c == '{'){
+                stack.push('}');
+            }else if(c == '['){
+                stack.push(']');
+            }else if(stack.isEmpty()|| c != stack.pop() ){
+                return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+
 
     /**
      * 1768. 交替合并字符串
