@@ -3,6 +3,7 @@ package cn.msjava.coding;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /**
@@ -80,19 +81,27 @@ public class TraversalOfBinaryTree {
      * 二叉树层次遍历
      * @param root
      */
-    public static void levelOrderTraversal(TreeNode root){
+    public static List<LinkedList<Integer>> levelOrderTraversal(TreeNode root){
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        queue.offer(root);
-        while (!queue.isEmpty()){
-            TreeNode node = queue.poll();
-            System.out.println(node.data);
-            if(node.leftChild!=null){
-                queue.offer(node.leftChild);
-            }
-            if(node.rightChild!=null){
-                queue.offer(node.rightChild);
-            }
+        if(root!=null){
+            queue.offer(root);
         }
+        List<LinkedList<Integer>> result = new LinkedList<LinkedList<Integer>>();
+        while (!queue.isEmpty()){
+            final int size = queue.size();
+            LinkedList<Integer> temp = new LinkedList<Integer>();
+            for (int i = 0; i < size; i++) {
+                TreeNode cur = queue.poll();
+                if(cur.leftChild!=null){
+                    queue.offer(cur.leftChild);
+                }
+                if(cur.rightChild!=null){
+                    queue.offer(cur.rightChild);
+                }
+            }
+            result.add(temp);
+        }
+        return result;
     }
 
 

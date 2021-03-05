@@ -9,7 +9,16 @@ public class TreeNode {
      TreeNode leftChild;
      TreeNode rightChild;
 
-     TreeNode(int data){
+    public TreeNode() {
+    }
+
+    TreeNode(int data){
         this.data=data;
+    }
+
+    public TreeNode(int data, TreeNode leftChild, TreeNode rightChild) {
+        this.data = data;
+        this.leftChild = leftChild;
+        this.rightChild = rightChild;
     }
 }
