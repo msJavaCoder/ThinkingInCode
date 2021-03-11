@@ -1,3 +1,5 @@
+import cn.msjava.coding.ListNode;
+
 import java.util.List;
 
 /**

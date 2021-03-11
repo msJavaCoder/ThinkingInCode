@@ -1,3 +1,5 @@
+package cn.msjava.coding;
+
 import java.util.Stack;
 
 /**

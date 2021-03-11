@@ -1,3 +1,7 @@
+package cn.msjava.coding;
+
+import cn.msjava.coding.ListNode;
+
 /**
  * msJava
  *
