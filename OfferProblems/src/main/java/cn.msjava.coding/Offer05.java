@@ -28,7 +28,13 @@ public class Offer05 {
 
     public static String replaceSpace_03(String s){
         int length = s.length();
-        char[] array = new char[length * 3];
+        int spaceCount=0;
+        for (int i = 0; i < length; i++) {
+            if(s.charAt(i)==' '){
+                spaceCount++;
+            }
+        }
+        char[] array = new char[length + spaceCount*2];
         int size = 0;
         for (int i = 0; i < length; i++) {
             char c = s.charAt(i);

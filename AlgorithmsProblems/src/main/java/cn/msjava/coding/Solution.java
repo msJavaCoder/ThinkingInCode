@@ -11,8 +11,41 @@ import java.util.Stack;
  */
 public class Solution {
     public static void main(String[] args) {
-        String s="}";
-        System.out.println(isValid(s));
+        System.out.println(removeOuterParentheses("(()())(())"));
+    }
+
+    /**
+     * 1021. 删除最外层的括号
+     * @param S
+     * @return
+     */
+    public static String removeOuterParentheses(String S) {
+
+        String substring = S.substring(1, S.length() - 1);
+
+        return substring;
+    }
+
+
+    /**
+     * 1662. 检查两个字符串数组是否相等
+     * @param word1
+     * @param word2
+     * @return
+     */
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        if(word1==null || word2==null){
+            return false;
+        }
+        StringBuilder s1=new StringBuilder();
+        StringBuilder s2=new StringBuilder();
+        for(String s : word1){
+            s1.append(s);
+        }
+        for(String s : word2){
+            s2.append(s);
+        }
+        return s1.toString().equals(s2.toString());
     }
 
 

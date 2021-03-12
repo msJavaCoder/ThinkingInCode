@@ -15,6 +15,8 @@ public class Offer18 {
      * @return
      */
     public ListNode deleteNode(ListNode head,int val){
+
+        new StringBuilder();
         if(head==null){
             return null;
         }
