@@ -12,7 +12,11 @@ public class Node {
 
     public Node next;
 
-    private Node(int data){
+    public Node(){
+
+    }
+
+    public Node(int data){
         this.value=data;
     }
 }
