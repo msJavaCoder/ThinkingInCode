@@ -1,6 +1,8 @@
 package cn.msjava.coding;
 
 
+import java.util.Arrays;
+
 /**
  * @description: 常見排序算法
  * @author: 微信公众号：码上Java
@@ -8,6 +10,12 @@ package cn.msjava.coding;
  * @version: 1.0
  */
 public class Sort {
+
+    public static void main(String[] args) {
+        int[] array ={5,8,6,3,9,2,1,7};
+        bubbleSort(array);
+        System.out.println(Arrays.toString(array));
+    }
 
     /**
      * 冒泡排序算法 时间复杂度 N2 空间复杂度 1 稳定
@@ -228,11 +236,7 @@ public class Sort {
         //todo
     }
 
-    public static void main(String[] args) {
-        int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-
-    }
 
 
 }
