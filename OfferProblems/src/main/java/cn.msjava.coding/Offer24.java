@@ -36,6 +36,7 @@ public class Offer24 {
      * @return
      */
     public ListNode reverseList_02(ListNode head) {
+        // 如果链表为空，那么直接返回null
         if (head == null || head.next == null) {
             return head;
         }

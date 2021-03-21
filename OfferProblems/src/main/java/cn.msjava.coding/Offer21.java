@@ -14,11 +14,11 @@ public class Offer21 {
      * @return
      */
     public int[] exchange(int[] nums){
-
+        // 如果数组为空，那么直接返回null
         if(nums==null || nums.length==0){
             return null;
         }
-
+        // 双指针，一个指向数组第一个元素，另一个指向数组最后一个元素
         int begin=0;
         int end=nums.length-1;
 

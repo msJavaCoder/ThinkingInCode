@@ -1,6 +1,5 @@
-import cn.msjava.coding.ListNode;
+package cn.msjava.coding;
 
-import java.util.List;
 
 /**
  * msJava
@@ -20,19 +19,22 @@ public class Offer22 {
         if(head==null || k<0){
             return head;
         }
-        ListNode former =head;
-        ListNode latter=head;
+        // 初始化两个指针
+        ListNode pre =head,low=head;
+        // 先让pre走k步
         for (int i = 0; i < k-1; i++) {
-            if(former .next!=null){
-                former =former .next;
+            if(pre .next!=null){
+                pre =pre .next;
             }else {
                 return null;
             }
         }
-        while (former .next!=null){
-            former =former .next;
-            latter=latter.next;
+        // pre走了k步之后，两个指针同时走，当pre.next==null的时候，
+        //     low指针刚好位于链表中倒数第k个节点
+        while (pre .next!=null){
+            pre =pre .next;
+            low=low.next;
         }
-        return latter;
+        return low;
     }
 }
