@@ -15,7 +15,6 @@ public class Offer22 {
      * @return
      */
     public ListNode getKthFromEnd(ListNode head, int k) {
-
         if(head==null || k<0){
             return head;
         }
