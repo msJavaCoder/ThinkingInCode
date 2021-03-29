@@ -1,6 +1,7 @@
 package cn.msjava.coding;
 
-import cn.msjava.coding.ListNode;
+
+import java.util.List;
 
 /**
  * msJava
@@ -55,6 +56,26 @@ public class Offer24 {
             first = second;
         }
         return reverseHead;
+    }
 
+    public ListNode reverseList_03(ListNode head){
+        if(head==null){
+            return head;
+        }
+        ListNode reversedHead=null;
+        ListNode curNode=head;
+        ListNode preNode=null;
+        while (curNode!=null){
+            // 保存当前节点的下一个节点 防止链表断开   关键点
+            ListNode nextNode=curNode.next;
+            // 如果当前节点的下一个节点为空，则说明当前节点就是反转之后的链表的头节点
+            if(nextNode==null){
+                reversedHead=curNode;
+            }
+            curNode.next=preNode;
+            preNode=curNode;
+            curNode=nextNode;
+        }
+        return reversedHead;
     }
 }
