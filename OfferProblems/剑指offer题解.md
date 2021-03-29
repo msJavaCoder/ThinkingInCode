@@ -5,4 +5,5 @@
 + [用两个栈实现队列](http://mp.weixin.qq.com/s?__biz=MzUzMzM2NTQ0Ng==&mid=100000846&idx=1&sn=a1e9f3c2ccc75717018b6797b44b19b7&chksm=7aa453e74dd3daf10f930f28065cb62c30b5fa2dffbd38761ae7683690305d801ec00da5ddd1#rd)
 + [删除链表节点](http://mp.weixin.qq.com/s?__biz=MzUzMzM2NTQ0Ng==&mid=100000881&idx=1&sn=30ff81c0cec276e8b9fd2c55e6a05468&chksm=7aa453d84dd3dace71e61de78c4404646f7877da39718568396677e25d34778a41044142b300#rd)
 + [调整数组顺序使奇数位于偶数前面](http://mp.weixin.qq.com/s?__biz=MzUzMzM2NTQ0Ng==&mid=100000881&idx=1&sn=30ff81c0cec276e8b9fd2c55e6a05468&chksm=7aa453d84dd3dace71e61de78c4404646f7877da39718568396677e25d34778a41044142b300#rd)
++ [链表中倒数第k个节点](http://mp.weixin.qq.com/s?__biz=MzUzMzM2NTQ0Ng==&mid=100000901&idx=1&sn=359a5df8f7f3b14d8d50f7343286c738&chksm=7aa4532c4dd3da3aef605bc958c356b06a4a50696fddd58cbb26313ae3febbb2ed3c956fef04#rd)
 
