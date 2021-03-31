@@ -1,4 +1,4 @@
-package cn.msjava.coding;
+package cn.msjava.coding.simple;
 /**
  * msJava
  *

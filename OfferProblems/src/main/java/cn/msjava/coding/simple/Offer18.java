@@ -1,4 +1,6 @@
-package cn.msjava.coding;
+package cn.msjava.coding.simple;
+
+import cn.msjava.coding.ListNode;
 
 /**
  * msJava
@@ -14,7 +16,7 @@ public class Offer18 {
      * @param val   要删除的值
      * @return
      */
-    public ListNode deleteNode_01(ListNode head,int val){
+    public ListNode deleteNode_01(ListNode head, int val){
 
         /**
          * 如果链表为空，
