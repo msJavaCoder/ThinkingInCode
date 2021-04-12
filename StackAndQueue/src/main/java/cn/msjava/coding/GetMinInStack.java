@@ -9,7 +9,9 @@ import java.util.Stack;
  */
 public class GetMinInStack {
 
+    // 正常栈
     private Stack<Integer> stackData;
+    // 用于保存每一步的最小值
     private Stack<Integer> stackMin;
 
     public GetMinInStack(){
@@ -17,6 +19,10 @@ public class GetMinInStack {
         this.stackMin=new Stack<Integer>();
     }
 
+    /**
+     * 入栈
+     * @param newNum
+     */
     public void push(int newNum){
         // 1. 判断stackMin，是否为空，如果为空压入
         if(this.stackMin.isEmpty()){
@@ -29,7 +35,10 @@ public class GetMinInStack {
         }
     }
 
-
+    /**
+     * 出栈
+     * @return
+     */
     public int pop(){
         if(this.stackData.isEmpty()){
             throw new RuntimeException("你的栈为空！");
@@ -41,6 +50,10 @@ public class GetMinInStack {
         return value;
     }
 
+    /**
+     * 获取最小元素
+     * @return
+     */
     public int getmin(){
         if(this.stackMin.isEmpty()){
             throw new RuntimeException("你的栈为空！");
